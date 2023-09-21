@@ -8,6 +8,3 @@
 
 // const objectB = objectA
 // objectB.lastname = 'Olegovich'
-
-
-

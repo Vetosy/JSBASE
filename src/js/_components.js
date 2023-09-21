@@ -4,3 +4,6 @@ import './components/objectexm';
 import './components/globalobject';
 import './components/json';
 import './components/mutations';
+import './components/function';
+import './components/callback';
+import './components/scope';
