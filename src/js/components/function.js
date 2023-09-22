@@ -65,4 +65,10 @@
 // console.log(personMain);
 // console.log(resultPerson);
 
+//// Значения параментров функции по умолчанию
+// const myFunction = (value, multiplier = 2) => { ///можно внутри парметров присваивать дефолтное значение параметра
+//   return value + multiplier
+// }
 
+// const result = myFunction(1) /// вызываем функцию с 1 аргументом
+// console.log(result);

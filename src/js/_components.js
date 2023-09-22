@@ -7,3 +7,7 @@ import './components/mutations';
 import './components/function';
 import './components/callback';
 import './components/scope';
+import './components/operators';
+import './components/operator...';
+import './components/anonfunction';
+import './components/arrowfn';
