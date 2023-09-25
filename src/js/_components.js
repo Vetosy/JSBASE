@@ -11,3 +11,7 @@ import './components/operators';
 import './components/operator...';
 import './components/anonfunction';
 import './components/arrowfn';
+import './components/errors';
+import './components/instruction';
+import './components/array';
+import './components/destruction';
