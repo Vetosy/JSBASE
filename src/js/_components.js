@@ -15,3 +15,5 @@ import './components/errors';
 import './components/instruction';
 import './components/array';
 import './components/destruction';
+import './components/ifelse';
+import './components/loops';
