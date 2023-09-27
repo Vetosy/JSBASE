@@ -17,3 +17,6 @@ import './components/array';
 import './components/destruction';
 import './components/ifelse';
 import './components/loops';
+import './components/taskasync';
+import './components/export';
+import './components/import';
