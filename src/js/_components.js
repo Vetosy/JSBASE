@@ -20,3 +20,6 @@ import './components/loops';
 import './components/taskasync';
 import './components/export';
 import './components/import';
+import './components/class';
+import './components/reduce';
+import './components/promise';
