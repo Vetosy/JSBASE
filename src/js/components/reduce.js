@@ -7,3 +7,4 @@
 
 // const max = num.reduce((acc, el) => Math.max(acc,el))
 // console.log(max); /// вычесляем самое большое число в массиве
+
