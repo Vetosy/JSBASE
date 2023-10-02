@@ -1,6 +1,6 @@
 //// Fetch API
 // fetch('https://jsonplaceholder.typicode.com/todos')
-//   .then(response => response.json())
+//   .then(response => response.json()) /// обрабатываем запрос с удаленного сервера,получаем очень много служебной информации и для того чтобы очистить от не нужной информации и получить массив мы и вызываем этот then,вызываем метод json непосредственно чтобы получить именно чистый json файл
 //   .then(json => console.log(json))
 //   .catch(error => console.error(error))
 
@@ -19,3 +19,4 @@
 //   .then((response) => response.json())
 //   .then(json => console.log(json))
 //   .catch(error => console.error(error))
+

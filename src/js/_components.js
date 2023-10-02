@@ -24,3 +24,4 @@ import './components/class';
 import './components/reduce';
 import './components/promise';
 import './components/fetchapi';
+import './components/async';

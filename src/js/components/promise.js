@@ -101,8 +101,4 @@
 //   .then((success) => console.log(success))
 //   .catch((error) => console.log(error.message))
 
-const strings = ['one', 'two', 'three']
 
-const result = strings.map((e) => {
-  console.log(e += 1);
-})
