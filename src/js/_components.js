@@ -26,3 +26,4 @@ import "./components/promise";
 import "./components/fetchapi";
 import "./components/async";
 import "./components/addEventListener";
+import "./components/shoppingcart";
