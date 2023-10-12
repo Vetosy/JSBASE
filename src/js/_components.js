@@ -27,3 +27,6 @@ import "./components/fetchapi";
 import "./components/async";
 import "./components/addEventListener";
 import "./components/shoppingcart";
+import "./components/worknumber";
+import "./components/workstring";
+import "./components/workobj";
