@@ -1,0 +1,39 @@
+//// Работа с reduce forEach
+//// reduce возвращает какой то результат значит пишем return
+//// reduce преобразовывает наш массив в любой тип данных хоть строку хоть число
+
+
+// const test = ['apple', 'banana', 'potato']
+
+// const result = test.reduce((acc, item) => {
+//   acc[`name-${item}`] = item
+//   return acc
+// }, {}) // {} это наш acc
+
+// console.log(result);
+
+// const result = test.reduce((acc, item) => {
+//   acc += item
+//   return acc
+// }, 'Фрукты') // это начальное значение
+
+// console.log(result);
+
+
+// const num = [1, 2, 3]
+
+// const newNum = num.reduce((acc, num) => {
+//   acc += num
+//   return acc
+// }, 0)
+
+// console.log(newNum);
+
+// const arr = [1, 2, 3, 4, 5]
+
+// const newArr = arr.reduce((acc, number) => {
+//   acc.push(number.toString()) /// привели наши числа в массиве к строкам с помощью toString()
+//   return acc
+// }, [])
+
+// console.log(newArr);

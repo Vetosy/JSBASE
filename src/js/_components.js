@@ -30,3 +30,6 @@ import "./components/shoppingcart";
 import "./components/worknumber";
 import "./components/workstring";
 import "./components/workobj";
+import "./components/workarr";
+import "./components/wokrarrmapfilter";
+import "./components/workarrreducforeach";
