@@ -33,3 +33,4 @@ import "./components/workobj";
 import "./components/workarr";
 import "./components/wokrarrmapfilter";
 import "./components/workarrreducforeach";
+import "./components/practic1";
