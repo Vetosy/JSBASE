@@ -1,9 +1,10 @@
 ////
 const discounts = [
-  [5, {
-    value: 100,
-    cond: 150
-  }],
+  // [5, {
+  //   value: 100,
+  //   cond: 150
+  // }],
+  [5, 50],
   [10, 200],
   [15, 300],
   [20, 500],
@@ -57,20 +58,16 @@ const games = [{
 
 const formattedGames = []
 
-
-
-
 games.forEach((game) => {
   const price = !game.price ? 0 : parseFloat(game.price) // если у нас нет game.price  или он null тогда выводим 0 иначе приводим к числу строку
 
-
-  const discountData = discounts.find((discount) => {
-    if (discount[0] === game.discountType) {
+  const discountData = discounts.find((discount) => { /// метод find бегает по массиву и как только он найдет то значение единственное которое надо он вернет его и завершится
+    if (discount[0] === game.discountType) { // здесь указываем индекс 0 и делаем проверку если у элемента массива индекс 0 равен discountType тогда верни true
       return true
     }
   })
 
-  const discountValue = Array.isArray(discountData) ? discountData[1] : null
+  const discountValue = Array.isArray(discountData) ? discountData[1] : null /// делаем проверку если наш discountData является массивом делаем это через Array.isArray,тогда верни в случае true первый индекс у discountData иначе верни null
 
   console.log(game.id, discountValue);
 
