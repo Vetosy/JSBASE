@@ -120,3 +120,51 @@
 // const res = userInfo(userProfile)
 // console.log(res);
 
+///// Деструктуризация
+
+// const test = [1, 2, 3, 4, 5]
+// const obj = {
+//   user_name: 1, /// иногда с серва могу прилетать вот такие вот значение в объектах
+//   user_age: 2,
+//   c: 3
+// }
+
+// const [one, two, three, four] = [1, 2, 3, 4] /// когда мы задаем значение переменным очень важно соблюдать порядок
+
+// const {
+//   user_name,
+//   user_age
+// } = {
+//   user_name: 'bob',
+//   user_age: 2
+// }
+
+// const [, , jack] = ['alex', 'bob', 'jack'] /// пропускаем бесполезные переменные которые нам не нужны
+// const {
+//   user_name
+// } = {
+//   user_name: 'bob',
+//   user_age: 2
+// } /// в объектах можно не ставить , тут сразу указываем какой объект нам нужно достать
+
+// const SERVER_ARRAY = ['alex', 20] /// запрос с сервера,где последнее значение пропадает
+// const [userName, userAge, hasCar = true] = SERVER_ARRAY /// задаем значение по умолчанию для hasCar
+
+// const SERVER_OBJ = {
+//   user_name: 'alex',
+//   user_age: 20
+// }
+
+// const {
+//   user_name = 'unknown', /// ставим значение по умолчанию
+//     user_age = 0
+// } = SERVER_OBJ
+
+//  
+
+
+// const [firstName] = SERVER_ARRAY /// в массиве переменовываем первый элемент т.к они идут по индексу с этим проблем нет
+
+// const {
+//   user_name: userName ///таким образом переменовали ключ по которому достаем значение, через :
+// } = SERVER_OBJ
