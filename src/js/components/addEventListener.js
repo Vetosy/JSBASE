@@ -60,3 +60,19 @@
 // window.addEventListener("resize", (event) => {
 //   console.log(event);
 // });
+
+
+///// Работа с прослушкой событий
+// const button = document.querySelector('#button')
+// const img = document.querySelector('#logo')
+// button.value = 'delete'
+
+// button.addEventListener('click', function() {
+//   img.remove()
+// })  Этот метод более гибкий для реализации,потому что через addEventListener мы может добавлять разные события и обратавать их и даже добавлять новый функционал
+
+
+
+// button.onclick = function () {
+//   img.remove()
+// } Этот метод он перезаписывает постоянно onclick если мы будет его использовать(не гибко),только если по клику будет происходить одно действие всегда

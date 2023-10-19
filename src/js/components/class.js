@@ -140,3 +140,48 @@
 // const res2 = myArr2.sum()
 // console.log(res2);
 
+
+
+/// ==============Классы. Конструкторы объектов ========
+
+// Представим ситуацию когда нам надо описать несколько одинаковых объектов
+
+// const persona1 = {
+//   userName: 'Марк',
+//   age: 30,
+//   isMarried: false,
+//   sayHi: function () {
+//     console.log(`Привет, ${yourName}! Меня зовут ${userName}`);
+//   }
+// }
+
+
+// const persona2 = {
+//   userName: 'Виталий',
+//   age: 28,
+//   isMarried: true,
+//   sayHi: function () {
+//     console.log(`Привет, ${yourName}! Меня зовут ${userName}`);
+//   }
+// }
+
+// Опишем класс это как чертеж для всех будущих объектов person которые будут создаваться на его основе (своего рода шаблок для будуших person)
+
+// class Person {
+//   constructor(userName, age, isMarried) {
+//     this.userName = userName
+//     this.age = age
+//     this.isMarried = isMarried
+//   }
+
+//   sayHi(name) {
+//     console.log(`Привет, ${name}! Меня зовут ${this.userName}`);
+//   }
+// }
+
+// const persona1 = new Person('Виталий', 28, true)
+// const persona2 = new Person('Павел', 30, false)
+// console.log(persona1);
+// console.log(persona2);
+// persona1.sayHi('Юрий')
+// persona2.sayHi('Юрий')

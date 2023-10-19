@@ -102,3 +102,91 @@
 //   .catch((error) => console.log(error.message))
 
 
+
+
+
+
+
+
+
+
+
+
+//////////// Создание промиса
+
+// const myPromise = new Promise(function (resolve, reject) {
+//   setTimeout(function () {
+//     // -- запрос на сервер
+//     const response = true
+
+//     if (response) {
+//       let message = 'success'
+//       resolve(message)
+//     } else {
+//       let message = 'failed'
+//       reject(message)
+//     }
+//   }, 1000)
+
+// })
+
+// myPromise.then(function (data) {
+//   console.log('then 1');
+//   console.log(data);
+//   return 'data from then 1'
+// }).then(function (data) {
+//   console.log('then 2');
+//   console.log(data);
+// }).catch(function (data) {
+//   console.log('catch');
+//   console.log(data);
+// })
+
+
+
+
+///// Цепочка промисов
+
+// const checkRooms = new Promise(function (resolve, reject) {
+
+//   setTimeout(() => {
+//     console.log('Запрос на сервер');
+//     const availableRooms = true
+
+//     if (availableRooms) {
+//       resolve('Номера есть')
+//     } else {
+//       reject('Номеров нет')
+//     }
+//   }, 1500)
+
+// })
+
+// checkRooms.then(function (data) {
+//   return new Promise(function (resolve, reject) {
+
+//     setTimeout(() => {
+//       console.log('---then 1 --');
+//       console.log('Ответ на пред шаге', data);
+//       console.log('Отправляем запрос на авиабилеты');
+//       const availableTikets = true
+
+//       if (availableTikets) {
+//         let message = 'Билеты есть'
+//         resolve(message)
+//       } else {
+//         let message = 'Билетов нет'
+//         reject(message)
+//       }
+//     }, 1000)
+
+//   })
+// }).then(function (data) {
+//   console.log('----then 2 ');
+//   console.log('Ответ на пред шаге', data);
+//   console.log('едим в отпуск');
+// }).catch(function (data) {
+//   console.log('--- catch')
+//   console.log('Ответ на предыдущем шаге', data)
+//   console.log('Отпуск отменяется')
+// })
